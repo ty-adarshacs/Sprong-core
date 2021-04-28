@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    
+    
+    <bean class="com.tyss.spring.bean.Student" id="studentone">
+    <property name="stid" value="100"/>
+    <property name="stname" value="guru"/>
+    </bean>
+   <bean class="com.tyss.spring.bean.Student" id="studenttwo" autowire-candidate="false">
+    <property name="stid" value="100"/>
+    <property name="stname" value="guru"/>
+    </bean>
+   <bean class="com.tyss.spring.bean.Student" id="studentthree" autowire-candidate="false">
+    <property name="stid" value="100"/>
+    <property name="stname" value="guru"/>
+    </bean>
+   
+</beans>
